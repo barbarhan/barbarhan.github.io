@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Barış Albayrak — Cloud & DevOps Engineer in Sydney." />
+  <title>Barış Albayrak — Cloud & DevOps Engineer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1117;
+      --panel: #161b22;
+      --panel2: #0f1724;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --line: #30363d;
+      --blue: #58a6ff;
+      --green: #3fb950;
+      --orange: #f0883e;
+      --purple: #bc8cff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, #10233d 0, transparent 34%), var(--bg);
+      color: var(--text);
+      font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    .wrap { max-width: 980px; margin: 38px auto; padding: 0 22px; }
+    .site {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: rgba(22, 27, 34, .94);
+      box-shadow: 0 24px 80px rgba(0,0,0,.32);
+    }
+    .bar { padding: 13px 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    main { padding: 30px; }
+    h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: 21px; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { margin: 8px 0 16px; }
+    .tagline { color: var(--muted); font-size: 17px; }
+    .hero { display: grid; grid-template-columns: 1.4fr .9fr; gap: 18px; align-items: stretch; }
+    .card { border: 1px solid var(--line); background: linear-gradient(180deg, var(--panel2), #111827); border-radius: 12px; padding: 16px 18px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .chip { border: 1px solid var(--line); border-radius: 999px; padding: 5px 10px; color: #c9d1d9; background: #0d1117; font-size: 13px; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin: 7px 0; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .metric strong { display: block; font-size: 21px; }
+    .metric span { color: var(--muted); font-size: 13px; }
+    .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .project b { color: var(--text); }
+    .project small { color: var(--muted); display: block; margin-top: 6px; }
+    .accent-blue { border-left: 3px solid var(--blue); }
+    .accent-green { border-left: 3px solid var(--green); }
+    .accent-orange { border-left: 3px solid var(--orange); }
+    .accent-purple { border-left: 3px solid var(--purple); }
+    footer { color: var(--muted); font-size: 13px; margin-top: 22px; }
+    @media (max-width: 760px) { .hero, .projects, .grid { grid-template-columns: 1fr; } main { padding: 22px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="site">
+      <div class="bar">baris.albayrak.ai</div>
+      <main>
+        <section class="hero">
+          <div>
+            <h1>👋 Hi, I'm Barış Albayrak</h1>
+            <p class="tagline"><strong>Cloud & DevOps Engineer</strong> in Sydney, focused on infrastructure, automation, and reliable systems.</p>
+            <p>I work with Linux, Azure fundamentals, CI/CD, monitoring, and practical app delivery. I like building tools that are simple to run and useful in real workflows.</p>
+            <div class="chips">
+              <span class="chip">Cloud</span><span class="chip">DevOps</span><span class="chip">Linux</span><span class="chip">CI/CD</span><span class="chip">Automation</span><span class="chip">Monitoring</span><span class="chip">App delivery</span>
+            </div>
+          </div>
+          <div class="card accent-blue">
+            <b>Current direction</b>
+            <ul>
+              <li>Cloud / DevOps Engineering</li>
+              <li>Platform and infrastructure automation</li>
+              <li>Reliable systems with clear operations</li>
+            </ul>
+          </div>
+        </section>
+
+        <h2>🔧 Open-source Contributions</h2>
+        <div class="projects">
+          <div class="card project accent-green">
+            <b>OpenClaw</b>
+            <p>Fixed Chrome MCP screenshot extension handling.</p>
+            <small><a href="https://github.com/openclaw/openclaw/pull/74685">PR #74685</a> · browser/tooling reliability</small>
+          </div>
+          <div class="card project accent-purple">
+            <b>CrossPoint Reader</b>
+            <p>Added Turkish localization and contributed reader improvements.</p>
+            <small><a href="https://github.com/crosspoint-reader/crosspoint-reader/pull/1192">PR #1192</a> · <a href="https://github.com/crosspoint-reader/crosspoint-reader/pull/1487">PR #1487</a> · localization and product polish</small>
+          </div>
+        </div>
+
+        <h2>🚀 Things I Build</h2>
+        <div class="projects">
+          <div class="card project accent-orange">
+            <b>Roastpool</b>
+            <p>A social sports scoring app for friendly competition, match history, and post-game receipts.</p>
+            <small>Available on iOS</small>
+          </div>
+          <div class="card project accent-blue">
+            <b>Broiler Batch Manager</b>
+            <p>A local-first poultry batch management app for real farm workflows.</p>
+            <small>Local-first data · operational tooling</small>
+          </div>
+        </div>
+
+        <h2>🏗️ What I Bring</h2>
+        <div class="grid">
+          <div class="card metric"><strong>Cloud</strong><span>Azure fundamentals, infrastructure mindset</span></div>
+          <div class="card metric"><strong>DevOps</strong><span>CI/CD, Linux, monitoring, automation</span></div>
+          <div class="card metric"><strong>Delivery</strong><span>Practical apps, testing, release discipline</span></div>
+        </div>
+
+        <h2>📫 Contact</h2>
+        <p><a href="https://github.com/barbarhan">GitHub</a> · <a href="https://www.linkedin.com/in/bcalbayrak/">LinkedIn</a> · Open to Cloud & DevOps Engineer roles in Sydney.</p>
+        <footer>Built with GitHub Pages.</footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
